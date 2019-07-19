@@ -12,6 +12,7 @@ Moment.js
 
 ** APIs **
 Picture to text - APIs
+Data Graphs API
 
 **Features to use. **
 Mobile Responsive
