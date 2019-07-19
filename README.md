@@ -1,5 +1,18 @@
 Travel Expense Tracker
 
+# Project Commandments 
+
+**Comment as much as you can, imagine if you were reading your code for the first time.
+
+**Remember to commit when you finish a task
+
+**We will work off at most two repositories other than master
+
+**Please try to check in on slack at the end of the day.
+
+**Communicate - Say what you feel
+
+
 ** Technologies & libraries we'll use. **
 MongolDB
 Express
@@ -16,6 +29,7 @@ Data Graphs API
 
 **Features to use. **
 Mobile Responsive
+2 New Technologies we haven't used
 Remaining Balance 
 Archive expense report
 Expiration report for expense spend
@@ -75,13 +89,6 @@ Steffano - BackEnd
 git remote -v
 see current git remote
 
-git set-url <origin> <remote repository>
+git remote set-url <origin> <remote repository>
 change remote repository
 
-Comment as much as you can, imagine if you were reading your code for the first time.
-
-Remember to commit when you finish a task
-
-We will work off at most two repositories other than master
-
-Please try to check in on slack at the end of the day.
