@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "dependencies": {
     "antd": "^3.20.5",
     "moment": "2",
@@ -8,4 +9,26 @@
   "keywords": [],
   "name": "antd-reproduction-template",
   "description": ""
+=======
+  "name": "cash-track",
+  "version": "1.0.0",
+  "description": "Travel Expense Tracker",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smalagadev/Cash-Track.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smalagadev/Cash-Track/issues"
+  },
+  "homepage": "https://github.com/smalagadev/Cash-Track#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+>>>>>>> master
 }
