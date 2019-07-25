@@ -13,34 +13,34 @@ Travel Expense Tracker
 **Communicate - Say what you feel
 
 
-** Technologies & libraries we'll use. **
-MongolDB
-Express
-React
-Node
-Heroku
-Materialize/Bulma/Bootstrap/Base/Semantic
-Authentication(JWT)/Passport
-Moment.js
+* Technologies & libraries we'll use. *
+** MongolDB **
+** Express **
+** React **
+** Node **
+** Heroku **
+** Materialize/Bulma/Bootstrap/Base/Semantic **
+** Authentication(JWT)/Passport **
+** Moment.js **
 
-** APIs **
-Picture to text - APIs
-Data Graphs API
+* APIs *
+** Picture to text - APIs **
+** Data Graphs API **
 
-**Features to use. **
-Mobile Responsive
-2 New Technologies we haven't used
-Remaining Balance 
-Archive expense report
-Expiration report for expense spend
-Downloadable Report
-Percentage spending
-Catagorize Purchases
-currency conversion(exchange rate)
-Positive return of expense(money left over)
-color coded alerts (Red-below; yellow-low; green-on budget)
+* Features to use. *
+** Mobile Responsive **
+** 2 New Technologies we haven't used **
+** Remaining Balance ** 
+** Archive expense report **
+** Expiration report for expense spend **
+** Downloadable Report **
+** Percentage spending **
+** Catagorize Purchases **
+** currency conversion(exchange rate) **
+** Positive return of expense(money left over) **
+** color coded alerts (Red-below; yellow-low; green-on budget) **
 
-**DataBases. **
+* DataBases. *
 --Users--
 Email
 Password
@@ -61,11 +61,11 @@ Amount Spent
 catagories
 
 
-**Future Features. **
-calendar
-drag and drop
-Picture to text - APIs
-Expiration report for expense
+* Future Features. *
+** calendar **
+** drag and drop **
+** Picture to text - APIs **
+** Expiration report for expense **
 Downloadable Report
 Spending suggestions based on location and remaining $$
 Suggestive Budgeting
@@ -73,7 +73,7 @@ Trip Budget
 multiple trips tracker
 
 
-** Issues **
+* Issues *
 
 ** Roles **
 
@@ -85,7 +85,7 @@ Thurman - BackEnd
 
 Steffano - BackEnd
 
-**note. **
+* note. *
 git remote -v
 see current git remote
 
