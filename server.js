@@ -10,7 +10,7 @@ app.listen(PORT,  () => console.log(`Server is running on port ${PORT}`));
 
 //routes
 app.get('/', function(req,res){
-    res.sendFile(path.join(__dirname, '/cash-track/public/index.html');
+    res.sendFile(path.join(__dirname, '/cash-track/public/index.html'));
 });
 
 app.get('/log-in', function(req,res){
