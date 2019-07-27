@@ -5,21 +5,13 @@ const app = express();
 
 const PORT = process.env.PORT || 3000;
 
-// Initialize Server
-app.listen(PORT,  () => console.log(`Server is running on port ${PORT}`));
+
+// Routing
+require('./routes/html-routes.js')(app);
+require('./routes/api-routes.js')(app);
 
 // Middleware
 app.use(express.static('public'));
 
-//routes
-app.get('/', function(req,res){
-    res.sendFile(path.join(__dirname, '/cash-track/public/index.html'));
-});
-
-app.get('/log-in', function(req,res){
-    res.send(" This is the Log-In Page")
-});
-
-app.get('/sign-up', function(req,res){
-        res.send(" This is the Sign-up Page")
-});
+// Initialize Server
+app.listen(PORT,  () => console.log(`Server is running on port ${PORT}`));
