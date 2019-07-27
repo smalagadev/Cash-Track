@@ -2,7 +2,7 @@
 const path = require("path");
 
 //exports
-exports.modules = function(app){
+module.exports = function(app){
   app.get("/", function(req, res) {
     res.sendFile(path.join(__dirname, "/cash-track/public/index.html"));
   });
