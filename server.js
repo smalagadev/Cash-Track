@@ -1,10 +1,13 @@
 // Declare dependencies and variables
 const express = require('express');
 const path = require('path');
+const mongojs = require('mongojs');
 const app = express();
 
 const PORT = process.env.PORT || 3000;
 
+// mongo
+const db = mongojs('cash-track-db')
 
 // Routing
 require('./routes/html-routes.js')(app);
