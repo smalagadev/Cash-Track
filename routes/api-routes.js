@@ -1,7 +1,8 @@
 const path = require('path');
 
-exports.modules = function(app){
+module.exports = function(app){
   app.get('/api/', function(req, res){
     res.json({ thing: 'apple' });
   })
-}
+};
+
