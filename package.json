@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/smalagadev/Cash-Track#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongo": "^0.1.0",
+    "mongojs": "^2.6.0"
   }
 }
