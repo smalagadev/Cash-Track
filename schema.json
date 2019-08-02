@@ -1,2 +1,24 @@
-" Users "
+Users : {
+  id: Int,
+  email: string,
+  password: string,
+  Trips: []
+}
 
+Trips:{
+  id: string,
+  user_id: int,
+  created: date,
+  budget: int,
+  active: bool,
+  entries: []
+}
+
+Expense{
+  index: int,
+  trip_id: int,
+  date: date,
+  time: time,
+  amount_spent: int,
+  category: string - ["food", "misc", 'travel', 'currency exchange', 'gift', 'ticket', 'inconvenience', 'housing', 'hygiene']
+}
