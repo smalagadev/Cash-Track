@@ -1,25 +1,20 @@
 // Declare dependencies and variables
 const path = require('path');
-const mongo = require('mongojs');
+const mongoose = require('mongoose');
 const express = require('express');
 const app = express();
 
 const PORT = process.env.PORT || 3000;
 
-// Mongo DB section
-const db = mongo('cash-track-db', ['Users', 'Trips', 'Expenses']);
+// Connect to Mongoose
+mongoose.connect('mongodb://localhost/cash-track-db', { useNewUrlParser: true });
 
-db.on('error', function(error){
-  console.log(`Database Error: ${error}`);
-});
+// Parse request body as JSON
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
-app.get('/users', function(req, res){
-  db.Users.find({}, function(error, results){
-    error ? console.log(error) : res.json(results);
-  });
-});
+// Make public a static folder
+app.use(express.static('public'));
 
 // Initialize Server
 app.listen(PORT,  () => console.log(`Server is running on Port:${PORT}`));
-
-//routes
