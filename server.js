@@ -16,5 +16,9 @@ app.use(express.json());
 // Make public a static folder
 app.use(express.static('public'));
 
+// Connect Routes
+require('./routes/html-routes.js')(app);
+require('./routes/api-routes.js')(app);
+
 // Initialize Server
 app.listen(PORT,  () => console.log(`Server is running on Port:${PORT}`));
