@@ -49,3 +49,22 @@
     color: orange; 
 }
 
+@media (max-width: 768px) {
+    .navbar_navigation-items {
+        display: none; 
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar_toggle-button {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar_logo {
+        position: relative;
+        left: 125px;
+    }
+}
+

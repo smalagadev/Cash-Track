@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Navbar from './components/Nav/Navbar';
 import Sidebar from './components/Sidebar/Sidebar';
 import Backdrop from './components/Backdrop/Backdrop';
+import Chart from './components/Chart/Chart';
 
 class App extends Component {
 
@@ -27,14 +28,20 @@ class App extends Component {
             backdrop = <Backdrop click={this.backdropClickHandler} />
         }
         return (
-            <div style = {{height: '100%'}}>
-                <Navbar sidebarButtonClickHandler={this.sidebarButtonClickHandler} />
-                <Sidebar show={this.state.sidebarOpen} />
-                {sidebar}
-                {backdrop}
-                <main style = {{marginTop: '64px'}}>
-                </main>
-            </div>
+            <React.Fragment>
+                <div style = {{height: '100%'}}>
+                    <Navbar sidebarButtonClickHandler={this.sidebarButtonClickHandler} />
+                    <Sidebar show={this.state.sidebarOpen} />
+                    {sidebar}
+                    {backdrop}
+                    <main style = {{marginTop: '64px'}}>
+                    </main>
+                </div>
+                <div className = "chart-container" style ={{position: 'relative' , height: '0vh' , width: '60vw' , left: '300px' ,}}>
+                    <Chart />
+                </div>
+
+            </React.Fragment>
         );
     }
 }

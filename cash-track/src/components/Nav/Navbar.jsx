@@ -5,7 +5,7 @@ import  SidebarButton from '../Sidebar/SidebarButton';
 const navbar = props => (
     <header className = "navbar">
         <nav className = "navbar_navigation">
-            <div className  = "sidebar_toggle_button">
+            <div className  = "navbar_toggle-button">
                 <SidebarButton click={props.sidebarButtonClickHandler} />
             </div>
             <div className = "navbar_logo"><a href = "/">CashTrack</a></div>

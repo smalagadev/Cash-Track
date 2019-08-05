@@ -10,6 +10,8 @@
     padding: 0;
     box-sizing: border-box;
     justify-content: space-around;
+    position: relative;
+    left: 5px;
 }
 
 .toggle-button:focus {

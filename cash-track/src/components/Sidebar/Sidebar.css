@@ -39,4 +39,10 @@
     color: orange;
 }
 
+@media (min-width: 769px) {
+    .sidebar {
+        display: none;
+    }
+}
+
 
