@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 
-const Schema = new mongoose.Schema;
+const Schema = mongoose.Schema;
 
-const Trips = new Schema({
+const TripSchema = new Schema({
   id: {
     type: Number,
     required: true,
@@ -32,6 +32,6 @@ const Trips = new Schema({
   entries: Array
 });
 
-// const Trip = mongoose.model('', Schema)
+const Trip = mongoose.model('Trip', TripSchema);
 
 module.exports = Trip;

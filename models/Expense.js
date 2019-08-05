@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
 
-const Expense = new Schema({
+const ExpenseSchema = new Schema({
   index:{
     type: Number,
     unique: true
@@ -30,6 +30,6 @@ const Expense = new Schema({
   //["food", "misc", 'travel', 'currency exchange', 'gift', 'ticket', 'inconvenience', 'housing', 'hygiene']
 });
 
-// const Expense = mongoose.model('', Schema);
+const Expense = mongoose.model('Expense', ExpenseSchema);
 
 module.exports = Expense;

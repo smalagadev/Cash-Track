@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 
-const Schema = new mongoose.Schema;
+const Schema = mongoose.Schema;
 
-const Users = new Schema({
+const UserSchema = new Schema({
   id: {
     type: Number,
     unique: true,
@@ -22,6 +22,6 @@ const Users = new Schema({
   trips: Array,
 });
 
-// const User = mongoose.model('', Schema);
+const User = mongoose.model('User', UserSchema);
 
 module.exports = User;
