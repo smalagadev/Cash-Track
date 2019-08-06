@@ -1,16 +1,8 @@
 const path = require('path');
-const db = require('./../models'); // Require all models
+const db = require('./../../models'); // Require all models
 
 module.exports = function(app){
-<<<<<<< HEAD
 
-  // Example collection from database
-  app.get('/ex/', function(req, res){
-    res.json({ thing: 'apple' });
-  })
-
-};
-=======
   app.get('/users/', function(req, res){
     res.json({ thing: 'apple' });
   });
@@ -33,4 +25,12 @@ module.exports = function(app){
 
   });
 }
->>>>>>> back-end
+
+// Rewrite
+// const router = require('express').Router();
+
+// Require api routes for all apis
+
+//router.use('filename', required-route);
+
+// module.exports = router;
