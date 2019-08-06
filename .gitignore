@@ -1,2 +1,6 @@
 data
+<<<<<<< HEAD
+=======
+data/diagnostic.data
+>>>>>>> back-end
 schema.json
