@@ -27,7 +27,7 @@ const ExpenseSchema = new Schema({
     // Specified for money
   },
   category: Array
-  //["food", "misc", 'travel', 'currency exchange', 'gift', 'ticket', 'inconvenience', 'housing', 'hygiene']
+  //["food", "misc", 'travel', 'currency exchange', 'gift', 'entertainemnt', 'inconvenience', 'housing']
 });
 
 const Expense = mongoose.model('Expense', ExpenseSchema);
