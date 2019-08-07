@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, {Component} from 'react';
 import Navbar from './components/Nav/Navbar';
 import Sidebar from './components/Sidebar/Sidebar';
@@ -46,31 +45,5 @@ class App extends Component {
         );
     }
 }
-=======
-import React from 'react';
-import './App.css';
 
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
->>>>>>> 53a7e2457053fe8d24911d1fb8f2b4d527ddeeea
 export default App;
