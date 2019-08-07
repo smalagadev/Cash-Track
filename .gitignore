@@ -1,4 +1,7 @@
 data
+<<<<<<< HEAD
+=======
 data/diagnostic.data
+>>>>>>> back-end
 schema.json
 node_modules/
