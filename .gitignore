@@ -1,6 +1,3 @@
-data
-<<<<<<< HEAD
-=======
-data/diagnostic.data
->>>>>>> back-end
+data/
 schema.json
+node_modules/
