@@ -1,36 +1,12 @@
-const path = require('path');
-const db = require('./../../models'); // Require all models
+const router = require('Express').Router();
+const userRoutes = require('./users');
+const tripRoutes = require('./trips');
+const expenseRoutes = require('./expenses');
 
-module.exports = function(app){
+routers.use('users', userRoutes);
 
-  app.get('/users/', function(req, res){
-    res.json({ thing: 'apple' });
-  });
+routers.use('trips', tripRoutes);
 
-  app.post('/users/', function(req, res){
-    db.User.create(req.body)
-    .then(function(user){
-      res.json(user);
-    })
-    .catch(function(err){
-      res.json(err);
-    });
-  });
+routers.use('expenses', expenseRoutes);
 
-  app.post('/trips/', function(req, res){
-
-  });
-
-  app.post('/expenses/', function(req, res){
-
-  });
-}
-
-// Rewrite
-// const router = require('express').Router();
-
-// Require api routes for all apis
-
-//router.use('filename', required-route);
-
-// module.exports = router;
+module.exports = router;
