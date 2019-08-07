@@ -1,14 +1,16 @@
 {
-  "name": "cash-track",
+  "name": "client",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+<<<<<<< HEAD:client/package.json
     "chart.js": "^2.8.0",
     "mongoose": "^5.6.6",
+=======
+>>>>>>> 53a7e2457053fe8d24911d1fb8f2b4d527ddeeea:client/package.json
     "react": "^16.8.6",
     "react-chartjs-2": "^2.7.6",
     "react-dom": "^16.8.6",
-    "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1"
   },
   "scripts": {
