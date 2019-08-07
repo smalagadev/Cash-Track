@@ -122,6 +122,70 @@ const tripSeed = [
   }
 ];
 
+const userSeed = [
+  {
+    id: '1',
+    email: 'mr.battle@gmail.com',
+    password: 'password',
+    trips: ['San Francisco, Miami, Las Vegas'],
+  },
+  {
+    id: '2',
+    email: 'mr.zeru@gmail.com',
+    password: 'password',
+    trips: ['Chicago, New York'],
+  },
+  {
+    id: '3',
+    email: 'mr.steffano@yahoo.com',
+    password: 'password',
+    trips: ['LA, DC'],
+  },
+  {
+    id: '4',
+    email: 'mr.stanley@gmail.com',
+    password: 'password',
+    trips: ['Philadelphia, Phoenix'],
+  },
+  {
+    id: '5',
+    email: 'mr.jaden@icloud.com',
+    password: 'password',
+    trips: ['Boston, Cleveland'],
+  },
+  {
+    id: '6',
+    email: 'mr.matt@yahoo.com',
+    password: 'password',
+    trips: ['Houston, Dallas, San Antonio'],
+  },
+  {
+    id: '7',
+    email: 'adam@gmail.com',
+    password: 'password',
+    trips: ['Toronto, Miami'],
+  },
+  {
+    id: '8',
+    email: 'miguel@icloud.com',
+    password: 'password',
+    trips: ['Miami, Daytona'],
+  },
+  {
+    id: '9',
+    email: 'lauren@icloud.com',
+    password: 'password',
+    trips: ['Ceveland, Brooklyn'],
+  },
+  {
+    id: '10',
+    email: 'mr.daivis@gmail.com',
+    password: 'password',
+    trips: ['Charlotte, Portland'],
+  },
+]
+
+
 db.Book
   .remove({})
   .then(() => db.Book.collection.insertMany(bookSeed))
