@@ -2,11 +2,14 @@ const router = require('Express').Router();
 const userRoutes = require('./users');
 const tripRoutes = require('./trips');
 const expenseRoutes = require('./expenses');
+const data = require('..scripts/seedDB.js')
 
-routers.use('users', userRoutes);
+router.use('users', userRoutes);
 
-routers.use('trips', tripRoutes);
+router.use('trips', tripRoutes);
 
-routers.use('expenses', expenseRoutes);
+router.use('expenses', expenseRoutes);
+
+router.use('/scripts/seedDB.js', data);
 
 module.exports = router;
