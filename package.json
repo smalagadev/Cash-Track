@@ -4,11 +4,11 @@
   "description": "Travel Expense Tracker",
   "main": "server.js",
   "scripts": {
-    "start": "if-env NODE_ENV=production && npm run start:prod || npm runt start:dev",
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "node server.js",
-    "start:dev": "concurrently \" nodemon --ignore 'client/*'\" \"npm run client\"",
-    "client": "cd client npm run start",
-    "post-install": "cd client && npm run start",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "postinstall": "cd client && npm install",
     "build": "cd client && npm run build",
     "preinstall": "cd client && npm install",
     "heroku-postbuild": "npm install && npm run build"
