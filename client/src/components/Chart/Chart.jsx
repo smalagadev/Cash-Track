@@ -12,11 +12,11 @@ class Chart extends Component {
                     {
                         label: 'Example',
                         data:[
-                            0,
-                            0,
-                            0,
-                            0,
-                            0
+                            17,
+                            347,
+                            42,
+                            347,
+                            17
                         ],
                         backgroundColor:[
                             'rgba(255, 99, 132, 0.6)',

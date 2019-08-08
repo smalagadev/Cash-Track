@@ -6,11 +6,11 @@ export default class Example extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Button color ="info" className = "Food">Food</Button>
-        <Button color ="info" className = "Living">Living</Button>
-        <Button color = "info" className ="Travel">Travel</Button>
-        <Button color = "info" className = "Entertainment">Entertainment</Button>
-        <Button color = "info" className  = "Other">Other</Button>
+        <Button style = {{backgroundColor: '#0099cc'}} color ="" className = "Food">Food</Button>
+        <Button style = {{backgroundColor: '#0099cc'}} color = "" className ="Living">Living</Button>
+        <Button style = {{backgroundColor: '#0099cc'}} color = "" className ="Travel">Travel</Button>
+        <Button style = {{backgroundColor:'#0099cc'}} color = "" className = "Entertainment">Entertainment</Button>
+        <Button style = {{backgroundColor: '#0099cc'}} color = "" className  = "Other">Other</Button>
       </React.Fragment>
     );
   }
