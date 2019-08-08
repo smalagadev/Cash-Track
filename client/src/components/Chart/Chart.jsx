@@ -7,7 +7,7 @@ class Chart extends Component {
         super(props);
         this.state = {
             chartData:{
-                labels: ['Food' , 'Entertainment' , 'Shopping' , 'Living' , 'Travel'],
+                labels: ['Food' , 'Travel' , 'Shopping' , 'Living' , 'Entertainment'],
                 datasets: [
                     {
                         label: 'Example',
