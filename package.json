@@ -10,7 +10,6 @@
     "client": "cd client && npm run start",
     "postinstall": "cd client && npm install",
     "build": "cd client && npm run build",
-    "heroku-postbuild": "npm install && npm run build"
   },
   "repository": {
     "type": "git",
@@ -23,28 +22,11 @@
   },
   "homepage": "https://github.com/smalagadev/Cash-Track#readme",
   "dependencies": {
-<<<<<<< HEAD
-    "availity-reactstrap-validation": "^2.6.0",
-    "bootstrap": "^4.3.1",
-=======
->>>>>>> ce794afc892c0c8b03c8337b099a7755046e2c8f
     "chart.js": "^2.8.0",
     "concurrently": "^4.1.1",
     "express": "^4.17.1",
-<<<<<<< HEAD
-    "materialize-css": "^1.0.0-rc.2",
-    "mongoose": "^5.6.6",
-    "react": "^16.8.6",
-    "react-chartjs-2": "^2.7.6",
-    "react-dom": "^16.8.6",
-    "react-materialize": "^3.3.4",
-    "react-router-dom": "^5.0.1",
-    "reactstrap": "^8.0.1",
-    "yarn": "^1.17.3"
-=======
     "moment": "^2.24.0",
     "mongoose": "^5.6.7",
     "path": "^0.12.7"
->>>>>>> ce794afc892c0c8b03c8337b099a7755046e2c8f
   }
 }
