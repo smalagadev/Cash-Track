@@ -6,183 +6,98 @@ mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/cash-track-db"
 );
 
+const expenses = [
+  // Total is 552.67
+  {
+    date:'07/14/19',
+    time:'9:12 A.M.',
+    amount:17.00,
+    category:'Travel',
+    description: 'Uber to Hotel'
+  },
+  {
+    date:'07/14/19',
+    time:'10:01 A.M.',
+    amount:347.00,
+    category:'Living',
+    description: 'Hotel, 3 nights'
+  },
+  {
+    date:'07/14/19',
+    time:'2:54 P.M.',
+    amount: 42.00,
+    category:'Food',
+    description: 'Publix'
+  },
+  {
+    date:'07/15/19',
+    time:'11:00 A.M.',
+    amount:7.32,
+    category:'Travel',
+    description: 'Uber to Beach'
+  },
+  {
+    date:'07/15/19',
+    time:'5:48 P.M.',
+    amount:29.14,
+    category:'Food',
+    description: 'Dinner and Show'
+  },
+  {
+    date:'07/16/19',
+    time:'3:15 P.M.',
+    amount:14.14,
+    category:'Food',
+    description: 'Lunch'
+  },
+  {
+    date:'07/16/19',
+    time:'8:00 P.M.'',
+    amount:9.23,
+    category:'Travel',
+    description: 'Lyft to bar area'
+  },
+  {
+    date:'07/16/19',
+    time:'1:12 A.M.',
+    amount:59.97,
+    category:'Entertainment',
+    description: 'Drinks + Entry'
+  },
+  {
+    date:'07/17/19',
+    time:'11:52 A.M.',
+    amount:7.87,
+    category:'Food',
+    description: 'Breakfast'
+  },
+  {
+    date:'07/17/19',
+    time:'9:12 A.M.',
+    amount:19.00,
+    category:'Travel',
+    description: 'Uber to the airport'
+  },
+]
+
 const tripSeed = [
   {
     trip_id: '1',
     created: date,
-    expiration: date,
-    budget: 500,
-    active: true,
+    duration: 4,
+    budget: 700,
+    destination: 'Key West'
   },
-  {
-    trip_id: '2',
-    created: date,
-    expiration: date,
-    budget: 1000,
-    active: true,
-  },
-  {
-    trip_id: '3',
-    created: date,
-    expiration: date,
-    budget: 1500,
-    active: true,
-  },
-  {
-    trip_id: '4',
-    created: date,
-    expiration: date,
-    budget: 2500,
-    active: true,
-  },
-  {
-    trip_id: '5',
-    created: date,
-    expiration: date,
-    budget: 3500,
-    active: true,
-  },
-  {
-    trip_id: '6',
-    created: date,
-    expiration: date,
-    budget: 4500,
-    active: true,
-  },
-  {
-    trip_id: '7',
-    created: date,
-    expiration: date,
-    budget: 5500,
-    active: true,
-  },
-  {
-    trip_id: '8',
-    created: date,
-    expiration: date,
-    budget: 6500,
-    active: true,
-  },
-  {
-    trip_id: '9',
-    created: date,
-    expiration: date,
-    budget: 2500,
-    active: true,
-  },
-  {
-    trip_id: '10',
-    created: date,
-    expiration: date,
-    budget: 3500,
-    active: true,
-  },
-  {
-    trip_id: '11',
-    created: date,
-    expiration: date,
-    budget: 4500,
-    active: true,
-  },
-  {
-    trip_id: '12',
-    created: date,
-    expiration: date,
-    budget: 5500,
-    active: true,
-  },
-  {
-    trip_id: '13',
-    created: date,
-    expiration: date,
-    budget: 6500,
-    active: true,
-  },
-  {
-    trip_id: '14',
-    created: date,
-    expiration: date,
-    budget: 7500,
-    active: true,
-  },
-  {
-  
-    trip_id: '15',
-    created: date,
-    expiration: date,
-    budget: 8500,
-    active: true,
-  },
-  {
-    trip_id: '16',
-    created: date,
-    expiration: date,
-    budget: 9500,
-    active: true,
-  }
+
 ];
 
 const userSeed = [
   {
     id: '1',
-    email: 'mr.battle@gmail.com',
-    password: 'password',
-    trips: ['San Francisco, Miami, Las Vegas'],
+    email: 'demo@gmail.com',
+    password: 'password'
   },
-  {
-    id: '2',
-    email: 'mr.zeru@gmail.com',
-    password: 'password',
-    trips: ['Chicago, New York'],
-  },
-  {
-    id: '3',
-    email: 'mr.steffano@yahoo.com',
-    password: 'password',
-    trips: ['LA, DC'],
-  },
-  {
-    id: '4',
-    email: 'mr.stanley@gmail.com',
-    password: 'password',
-    trips: ['Philadelphia, Phoenix'],
-  },
-  {
-    id: '5',
-    email: 'mr.jaden@icloud.com',
-    password: 'password',
-    trips: ['Boston, Cleveland'],
-  },
-  {
-    id: '6',
-    email: 'mr.matt@yahoo.com',
-    password: 'password',
-    trips: ['Houston, Dallas, San Antonio'],
-  },
-  {
-    id: '7',
-    email: 'adam@gmail.com',
-    password: 'password',
-    trips: ['Toronto, Miami'],
-  },
-  {
-    id: '8',
-    email: 'miguel@icloud.com',
-    password: 'password',
-    trips: ['Miami, Daytona'],
-  },
-  {
-    id: '9',
-    email: 'lauren@icloud.com',
-    password: 'password',
-    trips: ['Ceveland, Brooklyn'],
-  },
-  {
-    id: '10',
-    email: 'mr.daivis@gmail.com',
-    password: 'password',
-    trips: ['Charlotte, Portland'],
-  },
+
 ]
 
 
@@ -196,4 +111,6 @@ db.Book
   .catch(err => {
     console.error(err);
     process.exit(1);
-  });
+
+
+  17.00+347.00+42.00+7.32+29.14+14.14+9.23+59.97+7.87+19.00
