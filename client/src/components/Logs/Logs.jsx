@@ -1,6 +1,7 @@
 import React from 'react';
 import { Table } from 'reactstrap';
 import './Logs.css';
+import  demo from '../../demo';
 
 export default class Example extends React.Component {
   render() {
@@ -16,7 +17,7 @@ export default class Example extends React.Component {
         <tbody>
           <tr>
             <th scope="row">1</th>
-            <td>Mark</td>
+            <td>{demo.user.first}</td>
             <td>Otto</td>
           </tr>
           <tr>

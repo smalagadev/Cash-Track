@@ -8,13 +8,13 @@ const demo = {
   },
 
   trip: {
-    {
+    
       trip_id: '1',
       date: '07/14/19',
       duration: 4,
       budget: 700,
       destination: 'Key West'
-    }
+    
   },
 
   expense: [
@@ -63,7 +63,7 @@ const demo = {
     },
     {
       date:'07/16/19',
-      time:'8:00 P.M.'',
+      time:'8:00 P.M.',
       amount:9.23,
       category:'Travel',
       description: 'Lyft to bar area'
