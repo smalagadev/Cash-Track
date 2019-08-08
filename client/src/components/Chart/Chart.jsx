@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import {Pie} from 'react-chartjs-2';
+import {Doughnut} from 'react-chartjs-2';
+import  demo from '../../demo';
 
 class Chart extends Component {
     constructor(props) {
@@ -11,11 +12,11 @@ class Chart extends Component {
                     {
                         label: 'Example',
                         data:[
-                            123456,
-                            346743,
-                            385746,
-                            184736,
-                            183958
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
                         ],
                         backgroundColor:[
                             'rgba(255, 99, 132, 0.6)',
@@ -33,18 +34,20 @@ class Chart extends Component {
     static defaultProps = {
         displayTitle: true,
         displayLegend: true,
-        legendPosition: 'top'
+        legendPosition: 'bottom',
+        fontSize: 25
     }
     render() {
         return(
             <div className = "chart">
-            <Pie
+            <Doughnut
                 data={this.state.chartData}
                 options={{
                     title:{
                         display: this.props.displayTitle,
                         text: 'Categories',
-                        fontSize: 25
+                        fontSize: 25,
+                        fontColor: '#00ccff'
                     },
                     legend:{
                         display: this.props.displayLegend,

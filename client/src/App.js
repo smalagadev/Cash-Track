@@ -1,27 +1,33 @@
-import React from 'react';
+import React, {Component} from 'react';
+import Navbar from './components/Nav/Navbar';
+import Chart from './components/Chart/Chart';
+import Logs from './components/Logs/Logs'
+import AddBalance from './components/MoneyButton/AddBalance';
+import SubtractBalance from './components/MoneyButton/SubtractBalance';
+import ShowBalance from './components/ShowBalance/ShowBalance';
+import Categories from './components/Categories/Categories';
 import './App.css';
-import LoginPage from './Components/LogIn/Login';
+import BudgetCard from './components/BudgetCard/BudgetCard';
 
+class App extends Component {
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+    render() {
+        return (
+            <React.Fragment>
+                <Navbar />
+                <div className = "chart-container" style ={{position: 'relative' , height: '0vh' , width: '50vw' , left: '240px' ,  top: '20px' }}>
+                  <Chart />
+                  <Logs />
+                  <AddBalance />
+                  <SubtractBalance />
+                  <ShowBalance />
+                  <Categories />
+                  <BudgetCard />
+                </div>
 
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+            </React.Fragment>
+        );
+    }
 }
 
 

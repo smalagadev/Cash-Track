@@ -1,24 +1,65 @@
 import React from 'react';
 import './Navbar.css';
-import  SidebarButton from '../Sidebar/SidebarButton';
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem } from 'reactstrap';
 
-const navbar = props => (
-    <header className = "navbar">
-        <nav className = "navbar_navigation">
-            <div className  = "navbar_toggle-button">
-                <SidebarButton click={props.sidebarButtonClickHandler} />
-            </div>
-            <div className = "navbar_logo"><a href = "/">CashTrack</a></div>
-            {/* Space to make "CashTrack on left and items on right" */}
-            <div className = "emptySpace"/>
-            <div className = "navbar_navigation-items">
-                <ul>
-                    <li><a href = "/">Settings</a></li>
-                    <li><a href = "/">Manage Money</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-);
-
-export default navbar
+  export default class Example extends React.Component {
+    constructor(props) {
+      super(props);
+  
+      this.toggle = this.toggle.bind(this);
+      this.state = {
+        isOpen: false
+      };
+    }
+    toggle() {
+      this.setState({
+        isOpen: !this.state.isOpen
+      });
+    }
+    render() {
+      return (
+        <div>
+          <Navbar className = "navbar" expand="md">
+            <NavbarBrand className = "NavBrand" href="/">Cash$Track</NavbarBrand>
+            <NavbarToggler onClick={this.toggle} />
+            <Collapse isOpen={this.state.isOpen} navbar>
+              <Nav className="ml-auto" navbar>
+                <NavItem>
+                  <NavLink className = "Navlink" href="/components/">Profile</NavLink>
+                </NavItem>
+                <UncontrolledDropdown nav inNavbar>
+                  <DropdownToggle className = "Dropdown" nav caret>
+                    Options
+                  </DropdownToggle>
+                  <DropdownMenu right>
+                    <DropdownItem>
+                      Option 1
+                    </DropdownItem>
+                    <DropdownItem>
+                      Option 2
+                    </DropdownItem>
+                    <DropdownItem divider />
+                    <DropdownItem>
+                      Reset
+                    </DropdownItem>
+                  </DropdownMenu>
+                </UncontrolledDropdown>
+              </Nav>
+            </Collapse>
+          </Navbar>
+        </div>
+      );
+    }
+  }
+  

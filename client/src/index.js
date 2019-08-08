@@ -35,6 +35,8 @@ function App() {
 ReactDOM.render(<App />, document.getElementById("root"));
 
 import ReactDom from 'react-dom';
-import App from './App.js'
+import App from './App.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 ReactDom.render(<App />, document.getElementById('root'));
