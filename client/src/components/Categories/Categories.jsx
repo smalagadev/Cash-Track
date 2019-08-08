@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, ButtonGroup } from 'reactstrap';
+import { Button, } from 'reactstrap';
 import './Categories.css'
 
 export default class Example extends React.Component {
