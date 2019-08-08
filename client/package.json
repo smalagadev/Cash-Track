@@ -9,14 +9,10 @@
     "react": "^16.8.6",
     "react-chartjs-2": "^2.7.6",
     "react-dom": "^16.8.6",
-<<<<<<< HEAD:cash-track/package.json
     "react-materialize": "^3.3.4",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
     "reactstrap": "^8.0.1"
-=======
-    "react-scripts": "3.0.1"
->>>>>>> b67b8828ea2059c06bfe5f6d2ddf4013c1d2c4b6:client/package.json
   },
   "scripts": {
     "start": "react-scripts start",
