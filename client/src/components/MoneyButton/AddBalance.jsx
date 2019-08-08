@@ -6,7 +6,7 @@ export default class Example extends React.Component {
   render() {
     return (
       <div >
-        <Button className = "add-money" outline color="success">+</Button>{' '}
+        <Button className = "add-money" outline color="success">+</Button>{'.value '}
       </div>
     );
   }
