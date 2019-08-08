@@ -7,6 +7,7 @@ import SubtractBalance from './components/MoneyButton/SubtractBalance';
 import ShowBalance from './components/ShowBalance/ShowBalance';
 import Categories from './components/Categories/Categories';
 import './App.css';
+import BudgetCard from './components/BudgetCard/BudgetCard';
 
 class App extends Component {
 
@@ -21,6 +22,7 @@ class App extends Component {
                   <SubtractBalance />
                   <ShowBalance />
                   <Categories />
+                  <BudgetCard />
                 </div>
 
             </React.Fragment>
