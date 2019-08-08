@@ -4,7 +4,13 @@
   "description": "Travel Expense Tracker",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "postinstall": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm install && npm run build"
   },
   "repository": {
     "type": "git",
@@ -17,6 +23,8 @@
   },
   "homepage": "https://github.com/smalagadev/Cash-Track#readme",
   "dependencies": {
+    "chart.js": "^2.8.0",
+    "concurrently": "^4.1.1",
     "express": "^4.17.1",
     "moment": "^2.24.0",
     "mongoose": "^5.6.7",

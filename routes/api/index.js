@@ -1,36 +1,15 @@
-const path = require('path');
-const db = require('./../../models'); // Require all models
+const router = require('Express').Router();
+const userRoutes = require('./users');
+const tripRoutes = require('./trips');
+const expenseRoutes = require('./expenses');
+const data = require('..scripts/seedDB.js')
 
-module.exports = function(app){
+router.use('users', userRoutes);
 
-  app.get('/users/', function(req, res){
-    res.json({ thing: 'apple' });
-  });
+router.use('trips', tripRoutes);
 
-  app.post('/users/', function(req, res){
-    db.User.create(req.body)
-    .then(function(user){
-      res.json(user);
-    })
-    .catch(function(err){
-      res.json(err);
-    });
-  });
+router.use('expenses', expenseRoutes);
 
-  app.post('/trips/', function(req, res){
+router.use('/scripts/seedDB.js', data);
 
-  });
-
-  app.post('/expenses/', function(req, res){
-
-  });
-}
-
-// Rewrite
-// const router = require('express').Router();
-
-// Require api routes for all apis
-
-//router.use('filename', required-route);
-
-// module.exports = router;
+module.exports = router;
