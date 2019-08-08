@@ -6,7 +6,7 @@ export default class Example extends React.Component {
   render() {
     return (
       <Form className = "showBal">
-        <Input placeholder="$0.00" bsSize="" />
+        <Input placeholder="$5.00" bsSize="" />
       </Form>
     );
     }
