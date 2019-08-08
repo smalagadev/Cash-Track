@@ -13,7 +13,7 @@ class App extends Component {
         return (
             <React.Fragment>
                 <Navbar />
-                <div className = "chart-container" style ={{position: 'relative' , height: '0vh' , width: '50vw' , left: '240px' ,  top: '20px' ,}}>
+                <div className = "chart-container" style ={{position: 'relative' , height: '0vh' , width: '50vw' , left: '240px' ,  top: '20px' }}>
                   <Chart />
                   <Logs />
                   <AddBalance />
