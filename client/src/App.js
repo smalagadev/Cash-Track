@@ -6,6 +6,7 @@ import AddBalance from './components/MoneyButton/AddBalance';
 import SubtractBalance from './components/MoneyButton/SubtractBalance';
 import ShowBalance from './components/ShowBalance/ShowBalance';
 import Categories from './components/Categories/Categories';
+import './App.css';
 
 class App extends Component {
 
