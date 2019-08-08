@@ -1,17 +1,26 @@
 // Declare dependencies and variables
-const express = require('express');
 const path = require('path');
+const mongoose = require('mongoose');
+const express = require('express');
+const routes = require('./routes');
 const app = express();
 
 const PORT = process.env.PORT || 3000;
 
 
-// Routing
-require('./routes/html-routes.js')(app);
-require('./routes/api-routes.js')(app);
+// Connect to Mongoose
+mongoose.connect('mongodb://localhost/cash-track-db', { useNewUrlParser: true });
 
-// Middleware
+// Parse request body as JSON
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
+// Make public a static folder
 app.use(express.static('public'));
 
+// Connect Routes
+// previously require('./routes/')(app);
+app.use(routes);
+
 // Initialize Server
-app.listen(PORT,  () => console.log(`Server is running on port ${PORT}`));
+app.listen(PORT,  () => console.log(`Server is running on Port:${PORT}`));

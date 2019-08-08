@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/smalagadev/Cash-Track#readme",
   "dependencies": {
+    "availity-reactstrap-validation": "^2.6.0",
     "bootstrap": "^4.3.1",
     "chart.js": "^2.8.0",
     "express": "^4.17.1",
@@ -27,6 +28,7 @@
     "react-dom": "^16.8.6",
     "react-materialize": "^3.3.4",
     "react-router-dom": "^5.0.1",
+    "reactstrap": "^8.0.1",
     "yarn": "^1.17.3"
   }
 }
